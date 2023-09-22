@@ -1,0 +1,4 @@
+requests
+paho-mqtt
+telebot
+streamlit_authenticator==0.1.5

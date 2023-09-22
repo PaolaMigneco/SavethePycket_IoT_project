@@ -1,0 +1,10 @@
+{
+    "buildingID": 7,
+    "boxID":1,
+    "sensorID": "sensor_Relbox_7_1",
+    "sensor_name": "Relay Box status",
+    "sensor_type": "relay",
+    "sensor_unit": "Boolean",
+    "sensor_location": "box",
+    "topic": "SaveThePycket/sensors/sensor_Relbox_7_1"
+}

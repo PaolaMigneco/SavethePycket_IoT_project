@@ -1,0 +1,17 @@
+{
+
+    "buildingID": 7,
+    "boxID": 1,
+    "sensorID": "sensor_th_1",
+    "sensor_name": "Temperature and Humidity Sensor",
+    "sensor_type": [
+        "temperature",
+        "humidity"
+    ],
+    "sensor_unit": [
+        "Celsius degrees",
+        "%"
+    ],
+    "sensor_location": "box",
+    "topic": "SaveThePycket/sensors/sensor_th_7_1"
+}

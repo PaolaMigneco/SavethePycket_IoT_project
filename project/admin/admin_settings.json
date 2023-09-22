@@ -1,0 +1,32 @@
+{
+    "admins": [
+        {
+            "adminID": 1,
+            "admin_name": "Admin 1",
+            "buildingID": [1,2,7],
+            "password": "300899"
+
+           
+        },
+        {
+            "adminID": 2,
+            "admin_name": "Admin 2",
+            "buildingID": [4,5,6],
+            "password": "291694"
+            
+        },
+        {
+            "adminID": 3,
+            "admin_name": "Admin 3",
+            "buildingID": [3],
+            "password": "292521"
+        },
+        {
+            "adminID": 4,
+            "admin_name": "Admin 4",
+            "buildingID": [8],
+            "password": "292518"
+            
+        }
+    ]
+}

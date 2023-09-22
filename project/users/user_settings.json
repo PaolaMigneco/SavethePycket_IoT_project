@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "userID": 1,
+            "user_name": "Aurora Martiny",
+            "chatID": 0,
+            "buildingID": 1
+        },
+        {
+            "userID": 2,
+            "user_name": "Leandra Valenti",
+            "chatID": 0,
+            "buildingID": 2
+        },
+        {
+            "userID": 3,
+            "user_name": "Paola Migneco",
+            "chatID": 0,
+            "buildingID": 7
+        },
+        {
+            "userID": 4,
+            "user_name": "Marco Nesta",
+            "chatID": 0,
+            "buildingID": 8
+        }
+    ]
+}

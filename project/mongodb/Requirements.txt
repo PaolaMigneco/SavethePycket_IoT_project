@@ -1,0 +1,5 @@
+CherryPy==18.8.0
+paho_mqtt==1.6.1
+pandas==1.5.2
+pymongo==4.3.3
+Requests==2.31.0

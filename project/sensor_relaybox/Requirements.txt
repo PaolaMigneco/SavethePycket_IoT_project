@@ -1,0 +1,4 @@
+CherryPy==18.8.0
+keyboard==0.13.5
+paho_mqtt==1.6.1
+Requests==2.31.0

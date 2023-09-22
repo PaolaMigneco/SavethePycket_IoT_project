@@ -1,0 +1,10 @@
+{
+    "buildingID": 7,
+    "boxID": 1,
+    "sensorID": "sensor_Wg_7_1",
+    "sensor_name": "Weight Sensor",
+    "sensor_type": "weight",
+    "sensor_unit": "g",
+    "sensor_location": "box",
+    "topic": "SaveThePycket/sensors/sensor_Wg_7_1"
+}

@@ -1,0 +1,8 @@
+{
+    "id":"mongodb_adaptor",
+    "ip_address": "mongodb",
+    "ip_port": 8079,
+    "broker_port": 1883,
+    "broker": "test.mosquitto.org",
+    "base_topic": "savethepycket"
+}

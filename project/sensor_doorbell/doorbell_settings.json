@@ -1,0 +1,9 @@
+{
+    "buildingID": 7,
+    "userID": 3,
+    "sensorID": "sensor_dB_3",
+    "sensor_type": "sound",
+    "sensor_unit": "dB",
+    "sensor_location": "apartment",
+    "topic": "SaveThePycket/sensors/doorbells/sensor_dB_3"
+}

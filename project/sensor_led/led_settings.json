@@ -1,0 +1,10 @@
+{
+    "buildingID": 7,
+    "boxID": 1,
+    "sensorID": "sensor_led_1",
+    "sensor_name": "LED status",
+    "sensor_type": "led",
+    "sensor_unit":  "Boolean",
+    "sensor_location": "box",
+    "topic": "SaveThePycket/sensors/sensor_led_7_1"
+}

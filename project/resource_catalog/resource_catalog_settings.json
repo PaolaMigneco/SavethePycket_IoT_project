@@ -1,0 +1,8 @@
+{
+    "id": "resource_catalog",
+    "broker": "test.mosquitto.org",
+    "broker_port": 1883,
+    "base_topic": "res_cat",
+    "ip_address": "resource_catalog",
+    "ip_port": 8078
+}

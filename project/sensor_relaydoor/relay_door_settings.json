@@ -1,0 +1,8 @@
+{
+    "buildingID": 7,
+    "sensorID": "sensor_Reldoor_7",
+    "sensor_type": "Relaydoor",
+    "sensor_unit": "Boolean",
+    "sensor_location": "apartment",
+    "topic": "SaveThePycket/sensors/sensor_Reldoor_7"
+}

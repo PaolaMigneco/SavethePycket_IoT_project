@@ -1,0 +1,7 @@
+{
+    "ip_address": "service_catalog",
+    "ip_port": 8080,
+    "broker_port": 1883,
+    "broker": "test.mosquitto.org",
+    "base_topic": "savethepycket"
+}

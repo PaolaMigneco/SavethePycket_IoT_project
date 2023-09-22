@@ -1,0 +1,53 @@
+{
+    "buildings": [
+        {
+            "buildingID": 1,
+            "address_road": "Via Pigafetta",
+            "address_number": 13,
+            "password":"300899"
+        },
+        {
+            "buildingID": 3,
+            "address_road": "Via Pigafetta",
+            "address_number": 25,
+            "password":"1234"
+        },
+        {
+            "buildingID": 2,
+            "address_road": "Via Muriaglio",
+            "address_number": 10,
+            "password":"291694"
+        },
+        {
+            "buildingID": 4,
+            "address_road": "Via Marco Polo",
+            "address_number": 1,
+            "password":"1234"
+        },
+        {
+            "buildingID": 5,
+            "address_road": "Via Colli",
+            "address_number": 7,
+            "password":"1234"
+        },
+        {
+            "buildingID": 6,
+            "address_road": "Corso Duca degli Abruzzi",
+            "address_number": 108,
+            "password":"1234"
+        },
+        {
+            "buildingID": 7,
+            "address_road": "Via Cassini",
+            "address_number": 22,
+            "password":"292521"
+        },
+        {
+            "buildingID": 8,
+            "address_road": "Corso Peschiera",
+            "address_number": 205,
+            "password":"292518"
+        }
+
+    ]
+}

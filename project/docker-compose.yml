@@ -1,0 +1,196 @@
+version: '3'
+
+services:
+  service_catalog:
+    container_name: service_catalog
+    build:
+      context: ./service_catalog
+    ports:
+      - "8080:8080"
+    volumes:
+      - shared-data:/shared
+    restart: always
+
+  resource_catalog:
+    container_name: resource_catalog
+    build:
+      context: ./resource_catalog
+    ports:
+      - "8078:8078"
+    volumes:
+      - shared-data:/shared
+    restart: always
+    depends_on:
+      - service_catalog
+
+  admin:
+    container_name: admin
+    build:
+      context: ./admin
+    volumes:
+      - shared-data:/shared
+    restart: always
+    depends_on:
+      - service_catalog
+      - resource_catalog
+  
+  users:
+    container_name: users
+    build:
+      context: ./users
+    ports:
+      - "8083:8083"
+    volumes:
+      - shared-data:/shared
+    restart: always
+    depends_on:
+      - service_catalog
+      - resource_catalog
+  
+  buildings:
+    container_name: buildings
+    build:
+      context: ./buildings
+    volumes:
+      - shared-data:/shared
+    restart: always
+    depends_on:
+      - service_catalog
+      - resource_catalog
+
+  mongodb:
+    container_name: mongodb
+    build:
+      context: ./mongodb
+    ports:
+      - "8079:8079"
+    volumes:
+      - shared-data:/shared
+    restart: always
+    depends_on:
+      - service_catalog
+      - resource_catalog
+
+  telegram:
+    container_name: telegram
+    build:
+      context: ./telegram
+    volumes:
+      - shared-data:/shared
+    restart: always
+    depends_on:
+      - service_catalog
+      - resource_catalog
+  
+  dashboard_key_generation:
+    container_name: dashboard_key_generation
+    build:
+      context: ./dashboard_key_generation
+    volumes:
+      - shared-data:/shared
+    restart: always   
+    depends_on:
+      - service_catalog
+      - resource_catalog
+  
+  dashboard:
+    container_name: dashboard
+    build:
+      context: ./dashboard
+    volumes:
+      - shared-data:/shared
+    command: "streamlit run ./dashboard_SaveThePycket.py --server.enableCORS false"
+    ports:
+      - "8501:8501"
+    depends_on:
+      - service_catalog
+      - resource_catalog
+      - dashboard_key_generation
+      - mongodb
+
+  sensor_doorbell:
+    container_name: sensor_doorbell
+    build:
+      context: ./sensor_doorbell
+    volumes:
+      - shared-data:/shared
+    restart: always
+    depends_on:
+      - service_catalog
+      - resource_catalog
+
+  sensor_keyboard:
+    container_name: sensor_keyboard
+    build:
+      context: ./sensor_keyboard
+    volumes:
+      - shared-data:/shared
+    restart: always
+    depends_on:
+      - service_catalog
+      - resource_catalog
+  
+  sensor_relaydoor:
+    container_name: sensor_relaydoor
+    build:
+      context: ./sensor_relaydoor
+    volumes:
+      - shared-data:/shared
+    restart: always      
+    depends_on:
+      - service_catalog
+      - resource_catalog
+
+  sensor_led:
+    container_name: sensor_led
+    build:
+      context: ./sensor_led
+    volumes:
+      - shared-data:/shared
+    restart: always
+    depends_on:
+      - service_catalog
+      - resource_catalog
+  
+
+  sensor_weight:
+    container_name: sensor_weight
+    build:
+      context: ./sensor_weight
+    volumes:
+      - shared-data:/shared
+    restart: always      
+    depends_on:
+      - service_catalog
+      - resource_catalog
+
+  sensor_temp_and_hum:
+    container_name: sensor_temp_and_hum
+    build:
+      context: ./sensor_temp_and_hum
+    volumes:
+      - shared-data:/shared
+    restart: always      
+    depends_on:
+      - service_catalog
+      - resource_catalog
+  
+  sensor_relaybox:
+    container_name: sensor_relaybox
+    build:
+      context: ./sensor_relaybox
+    volumes:
+      - shared-data:/shared
+    restart: always      
+    depends_on:
+      - service_catalog
+      - resource_catalog
+
+  
+volumes:
+  shared-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: shared
