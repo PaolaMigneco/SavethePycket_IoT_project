@@ -10,6 +10,7 @@ HOW IT WORKS:
 Through the use of mqtt and Rest protocols, it was possible to manage specially designed boxes installed in common areas of buildings, where postmans can safely deposit packages. Through an easy-to-use Telegram application, recipients receive instant notifications containing the order number, allowing them to choose whether to remotely open the building entrance and the box or wait until they are available to retrieve packages
 
 The SaveThePycket dashboard is a powerful tool that allows both users and administrators to easily monitor the status of the secure boxes in real-time.
+After running the code, in order to open the dashboard, navigate to [localhost](http://localhost:8501/) 
 
 
 HOW TO RUN THE PROJECT:
